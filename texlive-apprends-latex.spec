@@ -1,3 +1,9 @@
+# revision 19306
+# category Package
+# catalog-ctan /info/apprends-latex
+# catalog-date 2010-07-09 10:38:38 +0200
+# catalog-license lppl
+# catalog-version 4.02
 Name:		texlive-apprends-latex
 Version:	4.02
 Release:	1
@@ -48,6 +54,7 @@ documentation for LaTeX beginners.
 %doc %{_texmfdistdir}/doc/latex/apprends-latex/latex.bib
 %doc %{_texmfdistdir}/doc/latex/apprends-latex/latexmkrc
 %doc %{_texmfdistdir}/doc/latex/apprends-latex/typographie.bib
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -58,3 +65,5 @@ documentation for LaTeX beginners.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
