@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apprends-latex.do
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 Apprends LaTeX! ("Learn LaTeX", in English) is French
@@ -54,7 +52,6 @@ documentation for LaTeX beginners.
 %doc %{_texmfdistdir}/doc/latex/apprends-latex/latex.bib
 %doc %{_texmfdistdir}/doc/latex/apprends-latex/latexmkrc
 %doc %{_texmfdistdir}/doc/latex/apprends-latex/typographie.bib
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -65,5 +62,3 @@ documentation for LaTeX beginners.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
