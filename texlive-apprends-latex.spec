@@ -6,7 +6,7 @@
 # catalog-version 4.02
 Name:		texlive-apprends-latex
 Version:	4.02
-Release:	5
+Release:	6
 Summary:	Apprends LaTeX!
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/apprends-latex
