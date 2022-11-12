@@ -1,18 +1,12 @@
-# revision 19306
-# category Package
-# catalog-ctan /info/apprends-latex
-# catalog-date 2010-07-09 10:38:38 +0200
-# catalog-license lppl
-# catalog-version 4.02
 Name:		texlive-apprends-latex
-Version:	4.02
-Release:	11
+Version:	19306
+Release:	1
 Summary:	Apprends LaTeX!
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/apprends-latex
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apprends-latex.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apprends-latex.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apprends-latex.r19306.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apprends-latex.doc.r19306.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -55,24 +49,10 @@ documentation for LaTeX beginners.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 4.02-2
-+ Revision: 749288
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 4.02-1
-+ Revision: 717845
-- texlive-apprends-latex
-- texlive-apprends-latex
-- texlive-apprends-latex
-- texlive-apprends-latex
-
