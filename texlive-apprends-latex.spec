@@ -1,6 +1,6 @@
 Name:		texlive-apprends-latex
 Version:	19306
-Release:	1
+Release:	2
 Summary:	Apprends LaTeX!
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/apprends-latex
