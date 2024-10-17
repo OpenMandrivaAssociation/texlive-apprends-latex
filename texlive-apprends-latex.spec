@@ -3,7 +3,7 @@ Version:	19306
 Release:	2
 Summary:	Apprends LaTeX!
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/info/apprends-latex
+URL:		https://www.ctan.org/tex-archive/info/apprends-latex
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apprends-latex.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/apprends-latex.doc.r%{version}.tar.xz
